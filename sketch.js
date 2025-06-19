@@ -54,6 +54,7 @@ function draw() {
     text('Tu es MORT !', width / 2, height / 2);
     textSize("10")
     text('Appuyez sur R pour recommencer', width/ 2, height / 1,5);
+    ko = true
   }
     
 }
