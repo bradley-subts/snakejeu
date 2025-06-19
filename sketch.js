@@ -59,15 +59,8 @@ function keyPressed() {
     return;
   }
 
-  if (keyCode == UP_ARROW && snake_direction != "down") {
-    snake_direction = "up";
-  } else if (keyCode == DOWN_ARROW && snake_direction != "up") {
-    snake_direction = "down";
-  } else if (keyCode == LEFT_ARROW && snake_direction != "right") {
-    snake_direction = "left";
-  } else if (keyCode == RIGHT_ARROW && snake_direction != "left") {
-    snake_direction = "right";
-  } else if ((key === 's' || key === 'S') && snake_direction != "up") {
+  
+  if ((key === 's' || key === 'S') && snake_direction != "up") {
     snake_direction = "down";
   } else if ((key === 'q' || key === 'Q') && snake_direction != "right") {
     snake_direction = "left";
