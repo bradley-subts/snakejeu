@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const alt = btn.getAttribute("alt");
 
       if (alt.includes("vert")) {
-  couleurSerpent = [0, 255, 0];
+  couleurSerpent = [0, 213, 0];
   isMulticolore = false;
 } else if (alt.includes("rouge")) {
   couleurSerpent = [255, 0, 0];
