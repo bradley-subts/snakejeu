@@ -20,7 +20,7 @@ function setup() {
       keyPressed();
       next_direction();
       move_snake();
-      updateGameInfo();
+      maj();
     }
   }, 100);
 }
@@ -46,6 +46,15 @@ function draw() {
     textAlign(CENTER, CENTER);
     text('PAUSE', width / 2, height / 2);
   }
+
+  if (!ko) {
+    fill(0);
+    textSize(30);
+    textAlign(CENTER, CENTER);
+    text('Tu es MORT !', width / 2, height / 2);
+    text('Appuyez sur R pour recommencer', width/ 2, height / 1,5);
+  }
+    
 }
 
 function keyPressed() {
@@ -57,6 +66,10 @@ function keyPressed() {
   if (keyCode == 79) { 
     isPaused = false;
     return;
+  }
+
+  if (keyCode == 82) {
+    restartGame()
   }
 
   if (keyCode == UP_ARROW && snake_direction != "down") {
@@ -137,7 +150,7 @@ function check_collision() {
   }
 }
 
-function updateGameInfo() {
+function maj() {
   const a = snake.length - 3;
   pommeNbr.textContent = `Pomme(s) : ${a}`;
   if (ko) {
