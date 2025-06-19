@@ -68,7 +68,14 @@ function keyPressed() {
     snake_direction = "right";
   } else if ((key === 'z' || key === 'Z') && snake_direction != "down") {
     snake_direction = "up";
-  }
+  } else if (keyCode == UP_ARROW && snake_direction != "down") {
+    snake_direction = "up";
+  } else if (keyCode == DOWN_ARROW && snake_direction != "up") {
+    snake_direction = "down";
+  } else if (keyCode == LEFT_ARROW && snake_direction != "right") {
+    snake_direction = "left";
+  } else if (keyCode == RIGHT_ARROW && snake_direction != "left") {
+    snake_direction = "right";
 }
 
 function next_direction() {
