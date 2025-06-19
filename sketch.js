@@ -60,15 +60,7 @@ function keyPressed() {
   }
 
   
-  if ((key === 's' || key === 'S') && snake_direction != "up") {
-    snake_direction = "down";
-  } else if ((key === 'q' || key === 'Q') && snake_direction != "right") {
-    snake_direction = "left";
-  } else if ((key === 'd' || key === 'D') && snake_direction != "left") {
-    snake_direction = "right";
-  } else if ((key === 'z' || key === 'Z') && snake_direction != "down") {
-    snake_direction = "up";
-  } else if (keyCode == UP_ARROW && snake_direction != "down") {
+  if (keyCode == UP_ARROW && snake_direction != "down") {
     snake_direction = "up";
   } else if (keyCode == DOWN_ARROW && snake_direction != "up") {
     snake_direction = "down";
