@@ -20,7 +20,7 @@ function setup() {
       keyPressed();
       next_direction();
       move_snake();
-      maj();
+      texte_score();
     }
   }, 100);
 }
@@ -52,6 +52,7 @@ function draw() {
     textSize(30);
     textAlign(CENTER, CENTER);
     text('Tu es MORT !', width / 2, height / 2);
+    textSize("10")
     text('Appuyez sur R pour recommencer', width/ 2, height / 1,5);
   }
     
@@ -150,7 +151,7 @@ function check_collision() {
   }
 }
 
-function maj() {
+function texte_score() {
   const a = snake.length - 3;
   pommeNbr.textContent = `Pomme(s) : ${a}`;
   if (ko) {
