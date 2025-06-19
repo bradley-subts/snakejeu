@@ -1,0 +1,39 @@
+html {
+  margin: 20px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffda94;
+}
+
+canvas {
+  display: block;
+  border: orange solid 7px;
+}
+
+#titre {
+  padding-left: 120px;
+  padding-top: 50px;
+}
+
+h2 {
+ display: inline-block; 
+  margin: 0 10px;      
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+#high-score-text {
+  padding-left: 200px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
