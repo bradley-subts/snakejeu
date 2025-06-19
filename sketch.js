@@ -1,4 +1,4 @@
-let couleurSerpent = [0, 180, 0];
+let couleurSerpent = [0, 255, 0];
 let isPaused = false;
 
 function setup() {
@@ -49,7 +49,7 @@ function draw() {
 }
 
 function keyPressed() {
-  if (keyCode == 80) { 
+  if (keyCode == 80) {
     isPaused = true;
     return;
   }
@@ -59,7 +59,6 @@ function keyPressed() {
     return;
   }
 
-  
   if (keyCode == UP_ARROW && snake_direction != "down") {
     snake_direction = "up";
   } else if (keyCode == DOWN_ARROW && snake_direction != "up") {
@@ -68,6 +67,7 @@ function keyPressed() {
     snake_direction = "left";
   } else if (keyCode == RIGHT_ARROW && snake_direction != "left") {
     snake_direction = "right";
+  }
 }
 
 function next_direction() {
@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const alt = btn.getAttribute("alt");
 
       if (alt.includes("vert")) {
-  couleurSerpent = [0, 180, 0];
+  couleurSerpent = [0, 255, 0];
   isMulticolore = false;
 } else if (alt.includes("rouge")) {
   couleurSerpent = [255, 0, 0];
