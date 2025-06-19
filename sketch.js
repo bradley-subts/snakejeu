@@ -49,12 +49,12 @@ function draw() {
 }
 
 function keyPressed() {
-  if (keyCode == 80) { // 'P' pour pause
+  if (keyCode == 80) { 
     isPaused = true;
     return;
   }
 
-  if (keyCode == 79) { // 'O' pour reprendre
+  if (keyCode == 79) { 
     isPaused = false;
     return;
   }
